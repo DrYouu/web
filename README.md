@@ -29,8 +29,9 @@ For the domain redirection to work correctly, ensure the following settings in C
 
 To force HTTPS and www redirect:
 
-1. Create a Page Rule for `http://*dryouu.uk/*`
-   - Setting: **Always Use HTTPS**
+1. Create Page Rules for HTTPS enforcement:
+   - `http://dryouu.uk/*` → Setting: **Always Use HTTPS**
+   - `http://www.dryouu.uk/*` → Setting: **Always Use HTTPS**
 
 2. Create a Page Rule for `www.dryouu.uk/*`
    - Setting: **Forwarding URL (301)**
