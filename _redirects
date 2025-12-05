@@ -1,0 +1,6 @@
+# Redirect www to non-www (apex domain)
+https://www.dryouu.uk/* https://dryouu.uk/:splat 301
+
+# Redirect http to https (if not handled by Cloudflare)
+http://dryouu.uk/* https://dryouu.uk/:splat 301
+http://www.dryouu.uk/* https://dryouu.uk/:splat 301
